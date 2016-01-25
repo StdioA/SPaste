@@ -1,0 +1,33 @@
+html {
+    height: auto;
+}
+
+body {
+    overflow: auto;
+}
+
+.ui.container {
+    margin-top: 50px;
+}
+
+.ui.container .header {
+    font-size: 1.8rem;
+    /*color: rgba(34, 36, 38, .1);*/
+    font-family: 'Architects Daughter', cursive;
+}
+
+.ui .header span:nth-child(1) {
+    cursor: pointer;
+}
+
+.ui .header span:nth-child(2) {
+    display: none;
+}
+
+.ui .header span:hover {
+    color: rgb(78, 157, 237);
+}
+
+.ui.form .segment {
+	display: none;
+}
