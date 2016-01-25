@@ -32,29 +32,34 @@
 					</div>
 					<div class="item">
 						<div class="tiny ui buttons">
-							<a href="/new"><button class="ui blue button" id="new-paste">New</button></a>
+							<a href="/new" target="_blank"><button class="ui blue button" id="new-paste">New</button></a>
 							<div class="or" data-text="-" id="copy-status"></div>
 							<button class="ui blue button" id="update">Save</button>
 						</div>
 					</div>
 					<div class="item">
-	                    <div class="ui toggle checkbox" id="markdown-view">
-	                        <input type="checkbox" name="markdown-view" tabindex="0" class="hidden">
-	                        <label for="markdown-view">Markdown View</label>
-	                    </div>
-	                </div>
+						<div class="ui toggle checkbox" id="markdown-view">
+							<input type="checkbox" name="markdown-view" tabindex="0" class="hidden">
+							<label for="markdown-view">Markdown View</label>
+						</div>
+					</div>
 					<div class="item">
-	                    <div class="ui label" data-content="Create Time" data-variation="mini inverted" data-position="right center">
-		                    <i class="calendar icon"></i>
-		                    <span id="create-time">{{ paste.getCreateTime }}</span>
-	                    </div>
-	                </div>
-	                <div class="item">
-	                    <div class="ui label" data-content="Last Modified" data-variation="mini inverted" data-position="right center">
-		                    <i class="write icon"></i>
-		                    <span id="modified-time">{{ paste.getModifiedTime }}</span>
-	                    </div>
-	                </div>
+						<div class="ui label" data-content="Create Time" data-variation="mini inverted" data-position="right center">
+							<i class="calendar icon"></i>
+							<span id="create-time">{{ paste.getCreateTime }}</span>
+						</div>
+					</div>
+					<div class="item">
+						<div class="ui label" data-content="Last Modified" data-variation="mini inverted" data-position="right center">
+							<i class="write icon"></i>
+							<span id="modified-time">{{ paste.getModifiedTime }}</span>
+						</div>
+					</div>
+					<div class="item">
+					<a href="https://github.com/StdioA/SPaste" target="_blank">
+						<i class="huge github icon"></i>
+					</a>
+				</div>
 				</div>
 			</div>
 		</div>

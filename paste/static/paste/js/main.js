@@ -2,10 +2,9 @@
     var id = window.location.pathname.substring(1);
 
     function save() {
-        text = $("#textarea").text();
+        var text = $("#textarea").val();
         $.post("/api/paste/"+id, {content: text}, function (data, status) {
             if(status == "success") {
-                console.log(data);
                 $("#modified-time").text(data.note.modified_time);
                 $('#update').addClass('green');
                     setTimeout(function() {
