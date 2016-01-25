@@ -6,6 +6,13 @@ body {
     overflow: auto;
 }
 
+.ui.list .item a {
+    color: #fff;
+}
+
+.ui.list .item .github {
+    color: #4183c4;
+}
 .ui.container {
     margin-top: 50px;
 }

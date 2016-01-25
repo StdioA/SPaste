@@ -33,14 +33,15 @@
 	$("#save").on("click", save);
 	$('#auto-save').checkbox({
         onChecked: function() {
+        	save();
             $('.ui.modal')
                 .modal({
                     closable: false,
-                    onDeny: function() {
-                        $('#auto-save input').prop('checked', false);
-                    },
                     onApprove: function() {
                         $('#auto-save').addClass('disabled');
+                    },
+                    onDeny: function() {
+                        $('#auto-save input').prop('checked', false);
                     }
                 })
                 .modal('show');
