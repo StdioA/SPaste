@@ -1,0 +1,32 @@
+body {
+	background: #f1f1f1;
+}
+
+a {
+	color: #1e60bf;
+}
+
+a:hover {
+	color: #1e50bf;
+}
+
+.ui.container {
+	font-family: "Architects Daughter", "Consolas", "Microsoft Yahei", sans-serif;
+    margin-top: 200px;
+}
+
+.ui.header {
+	color: #1e60bf;
+	font-family: "Architects Daughter", "Consolas", "Microsoft Yahei", sans-serif;
+}
+
+.ui.header a, .ui.container a {
+	/*color: #1e60bf;*/
+}
+
+@media (min-width: 600px) {
+	.ui.container .header {
+	    font-size: 3rem;
+	}
+}
+x`

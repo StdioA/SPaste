@@ -1,10 +1,23 @@
+{% load staticfiles %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<title>SPaste</title>
+	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Architects+Daughter">
+<link rel="stylesheet" href="//cdn.bootcss.com/semantic-ui/2.1.8/semantic.min.css">
+	<link href="{% static 'paste/css/index.css' %}" rel="stylesheet">
 </head>
 <body>
-	<a href="/new">Create a new paste!</a>
+	<div class="ui center aligned container">
+        <h1 class="ui header">
+            <div>Online Notebook</div>
+            <div><a href="/new/">Create a new note!</a></div>
+        </h1>
+		<a href="https://github.com/StdioA/SPaste"><i class="icon huge github"></i></a>
+    </div>
+    <script src="//cdn.bootcss.com/jquery/2.2.0/jquery.min.js"></script>
+	<script src="//cdn.bootcss.com/semantic-ui/2.1.8/semantic.min.js"></script>
 </body>
 </html>
