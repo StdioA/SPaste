@@ -12,11 +12,6 @@
     var id = window.location.pathname.substring(1);
     $('#markdown-view').checkbox({
         onChecked: function() {
-            $.post('/api/note/markdown/' + id, {
-                status: true
-            }, function(data) {
-            	//
-            });
             $('.ui.form .segment').html(marked($('textarea').val()));
             $('.ui.form .segment').show();
             $('textarea').hide();
@@ -25,11 +20,6 @@
             });
         },
         onUnchecked: function() {
-            $.post('/api/note/markdown/' + id, {
-                status: false
-            }, function(data) {
-            	//
-            });
             $('.ui.form .segment').hide();
             $('textarea').show();
         }

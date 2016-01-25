@@ -7,6 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 	<title>SPaste</title>
 	<link href="//cdn.bootcss.com/semantic-ui/2.1.8/semantic.min.css" rel="stylesheet">
+	<link href="//cdn.bootcss.com/highlight.js/9.1.0/styles/solarized-light.min.css" rel="stylesheet">
 	<link href="{% static 'paste/css/main.css' %}" rel="stylesheet">
 </head>
 <body>
@@ -26,21 +27,27 @@
 					<div class="item">
 						<div class="tiny ui buttons">
 							<button class="ui blue button" id="copy-url">Copy URL</button>
-							<div class="or" data-text="-" id="copy-status"></div>
+							<div class="or" data-text="or" id="copy-status"></div>
 							<button class="ui blue button" id="copy-text" data-clipboard-target="#textarea">Copy Text</button>
 						</div>
 					</div>
 					<div class="item">
 						<div class="tiny ui buttons">
 							<a href="/new/" target="_blank"><button class="ui blue button" id="new-paste">New</button></a>
-							<div class="or" data-text="-" id="copy-status"></div>
-							<button class="ui blue button" id="update">Save</button>
+							<div class="or" data-text="or" id="copy-status"></div>
+							<button class="ui blue button" id="save">Save</button>
 						</div>
 					</div>
 					<div class="item">
 						<div class="ui toggle checkbox" id="markdown-view">
 							<input type="checkbox" name="markdown-view" tabindex="0" class="hidden">
 							<label for="markdown-view">Markdown View</label>
+						</div>
+					</div>
+					<div class="item">
+						<div class="ui toggle checkbox" id="auto-save">
+							<input type="checkbox" name="auto-save" tabindex="0" class="hidden">
+							<label for="auto-save">Auto Save</label>
 						</div>
 					</div>
 					<div class="item">
@@ -56,10 +63,10 @@
 						</div>
 					</div>
 					<div class="item">
-					<a href="https://github.com/StdioA/SPaste" target="_blank">
-						<i class="huge github icon"></i>
-					</a>
-				</div>
+						<a href="https://github.com/StdioA/SPaste" target="_blank">
+							<i class="huge github icon"></i>
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -67,7 +74,10 @@
 
 	<script src="//cdn.bootcss.com/jquery/2.2.0/jquery.min.js"></script>
 	<script src="//cdn.bootcss.com/semantic-ui/2.1.8/semantic.min.js"></script>
+	<script src="//dn-cdnjs-cn.qbox.me/ajax/libs/marked/0.3.5/marked.min.js"></script>
 	<script src="//dn-cdnjs-cn.qbox.me/ajax/libs/clipboard.js/1.5.5/clipboard.min.js"></script>
+	<script src="//dn-cdnjs-cn.qbox.me/ajax/libs/highlight.js/9.0.0/highlight.min.js"></script>
 	<script src="{% static 'paste/js/main.js' %}"></script>
+	<script src="{% static 'paste/js/md.js' %}"></script>
 </body>
 </html>

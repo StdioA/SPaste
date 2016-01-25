@@ -39,7 +39,7 @@ def api(request, hash_):
     try:
         paste = Paste.objects.get(paste_hash=hash_)
     except Paste.DoesNotExist:
-        data = {"error": "not exist"}
+        return JsonResponse({"error": "not exist"})
     else:
         if request.method == "GET":
             return JsonResponse(paste.getData())

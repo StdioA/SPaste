@@ -31,3 +31,7 @@ body {
 .ui.form .segment {
 	display: none;
 }
+
+.markdown-body code {
+    font-family: Consolas;
+}
